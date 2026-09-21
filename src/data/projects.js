@@ -1,9 +1,231 @@
 const projects = [
   {
+    id: "365-dias-depois",
+    title: "365 Dias Depois",
+    subtitle: "Interactive Web Experience",
+    status: "Private",
+    role: "Solo Developer",
+    team: "Personal Project",
+    featured: true,
+
+    description:
+      "An interactive personal web experience built around a countdown, daily letters and time-based surprises.",
+
+    overview:
+      "365 Dias Depois is a personal web experience designed around a year-long countdown. The application combines authenticated access, a dynamic countdown, an unlockable calendar, daily letters and interactive surprise pages into a single narrative experience.",
+
+    technologies: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Supabase",
+      "LocalStorage",
+    ],
+
+    contributions: [
+      "Frontend Development",
+      "Responsive Interface",
+      "Authentication Integration",
+      "Countdown Logic",
+      "Time-Based Content Unlocking",
+      "Interactive Experience Design",
+    ],
+
+    features: [
+      "Password-Protected Access",
+      "Dynamic Countdown",
+      "Daily Letter System",
+      "Unlockable Calendar",
+      "Interactive Surprise Pages",
+      "Persistent Browser State",
+    ],
+
+    developmentProcess: {
+      label: "How I Built It",
+      title: "Development Process",
+
+      description:
+        "The project was built from scratch as a personal development project, combining interface design, JavaScript logic and a small authentication layer to create a time-based interactive experience.",
+
+      steps: [
+        {
+          number: "1",
+          title: "Experience Design",
+          description:
+            "I planned the main navigation and the sequence of the experience, including the login, countdown, calendar, letters and surprise sections.",
+        },
+        {
+          number: "2",
+          title: "Interface Development",
+          description:
+            "I built the pages and visual components using HTML and CSS, creating the different layouts and interactive states of the experience.",
+        },
+        {
+          number: "3",
+          title: "JavaScript Logic",
+          description:
+            "I implemented the countdown, date calculations, daily content unlocking, navigation and interaction logic with JavaScript.",
+        },
+        {
+          number: "4",
+          title: "Authentication & Persistence",
+          description:
+            "I integrated Supabase authentication and used browser storage to keep track of the user's progress through the experience.",
+        },
+      ],
+
+      collaborationTitle: "End-to-End Personal Project",
+
+      collaborationDescription:
+        "Because this was a personal project, I was responsible for the interface, interaction logic, content structure and technical implementation from start to finish.",
+    },
+
+    challenges: {
+      label: "What Challenged Me",
+      title: "Challenges",
+
+      items: [
+        {
+          title: "Time-Based Content",
+          description:
+            "The application needed to calculate dates and determine which letters and calendar entries should be available at each moment.",
+        },
+        {
+          title: "Creating an Interactive Experience",
+          description:
+            "The project was not only about displaying information. The interface had to guide the user through different moments, states and surprises while keeping the experience cohesive.",
+        },
+      ],
+    },
+
+    lessons: {
+      label: "Experience",
+      title: "Lessons Learned",
+
+      description:
+        "This project strengthened my JavaScript skills, especially around dates, browser state and dynamic interfaces. It also gave me practical experience turning a personal idea into a complete web experience with multiple pages and interactive flows.",
+    },
+
+    teamMembers: [],
+    gallery: [],
+    github: "",
+    demo: "",
+  },
+
+  {
+    id: "semusa",
+    title: "SEMUSA",
+    subtitle: "Public Health Data Dashboard",
+    status: "Private",
+    role: "Frontend Developer",
+    team: "Development Team",
+    featured: true,
+
+    description:
+      "A public health indicators dashboard developed in a team to support management through data visualization and interactive filters.",
+
+    overview:
+      "SEMUSA is an academic applied project developed in a team for institutional use. The dashboard presents public health indicators, including maternal and child health and colorectal cancer, through interactive charts and filters to support management and data analysis.",
+
+    technologies: [
+      "React",
+      "Vite",
+      "Recharts",
+    ],
+
+    contributions: [
+      "Frontend Development",
+      "Dashboard Interface",
+      "Data Visualization",
+      "Interactive Filters",
+      "React Components",
+    ],
+
+    features: [
+      "Health Indicator Dashboard",
+      "Interactive Charts",
+      "Data Filters",
+      "Maternal & Child Health Indicators",
+      "Colorectal Cancer Indicators",
+    ],
+
+    developmentProcess: {
+      label: "My Contribution",
+      title: "Frontend Development",
+
+      description:
+        "The project is being developed collaboratively by multiple developers. My current contribution is focused on the frontend, building the dashboard interface and data visualizations with React, Vite and Recharts.",
+
+      steps: [
+        {
+          number: "1",
+          title: "Interface Development",
+          description:
+            "I am responsible for implementing the frontend interface and organizing the dashboard's visual structure in React.",
+        },
+        {
+          number: "2",
+          title: "Data Visualization",
+          description:
+            "I use Recharts to turn health indicators into interactive visualizations that can be explored through the dashboard.",
+        },
+        {
+          number: "3",
+          title: "Filters & Interaction",
+          description:
+            "I work on the interactive elements that allow users to filter and explore the information presented by the dashboard.",
+        },
+        {
+          number: "4",
+          title: "Team Development",
+          description:
+            "The frontend is developed as part of a larger team effort, with other developers working on the remaining areas of the application.",
+        },
+      ],
+
+      collaborationTitle: "Collaborative Project",
+
+      collaborationDescription:
+        "SEMUSA is being developed by a team of developers. My current role is focused on the frontend, while other parts of the application are being developed collaboratively by the team.",
+    },
+
+    challenges: {
+      label: "What Challenged Me",
+      title: "Challenges",
+
+      items: [
+        {
+          title: "Working With Health Data",
+          description:
+            "The dashboard requires careful treatment of institutional health information and clear visual communication so that indicators can be understood correctly.",
+        },
+        {
+          title: "Building a Data-Focused Interface",
+          description:
+            "A major focus of the frontend is organizing charts, filters and information so that a large amount of data can be explored without making the interface difficult to use.",
+        },
+      ],
+    },
+
+    lessons: {
+      label: "Experience",
+      title: "Lessons Learned",
+
+      description:
+        "The project is giving me practical experience developing a real-world data dashboard in a team environment. It is strengthening my frontend skills with React and data visualization while also exposing me to a larger application architecture and institutional requirements.",
+    },
+
+    teamMembers: [],
+    gallery: [],
+    github: "",
+    demo: "",
+  },
+
+  {
     id: "apoieme",
     title: "Apoie.me",
     subtitle: "Donation & Volunteer Platform",
-    status: "Private",
+    status: "Public",
     role: "Full Stack Developer",
     team: "5 Developers",
     featured: true,
@@ -137,7 +359,7 @@ const projects = [
     ],
 
     gallery: [],
-    github: "",
+    github: "https://github.com/dannielvh/Apoie.me.git",
     demo: "",
   },
 
@@ -257,7 +479,7 @@ const projects = [
     id: "loja-croche",
     title: "Loja Crochê",
     subtitle: "E-commerce & Custom Crochet",
-    status: "Public",
+    status: "Private",
     role: "Full Stack Developer",
     team: "Personal Project",
     featured: true,
@@ -309,11 +531,8 @@ const projects = [
     },
 
     teamMembers: [],
-
     gallery: [],
-
-    github: "https://github.com/Jade-Souza/Loja-Croche",
-
+    github: "",
     demo: "",
   },
 

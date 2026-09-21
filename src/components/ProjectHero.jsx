@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function ProjectHero({ project }) {
   return (
-    <section className="pb-20 border-b border-white/10">
+    <section className="pb-12 sm:pb-20 border-b border-white/10">
 
       <Link
         to="/"
@@ -11,23 +11,23 @@ function ProjectHero({ project }) {
         ← Back to Portfolio
       </Link>
 
-      <div className="mt-12">
+      <div className="mt-8 sm:mt-12">
 
-        <p className="uppercase tracking-[6px] text-violet-400 font-semibold">
+        <p className="uppercase tracking-[3px] sm:tracking-[6px] text-violet-400 font-semibold text-sm sm:text-base">
           {project.subtitle}
         </p>
 
-        <h1 className="text-6xl lg:text-7xl font-extrabold mt-5">
+        <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold mt-5 break-words">
           {project.title}
         </h1>
 
-        <p className="text-zinc-400 text-xl leading-9 max-w-3xl mt-8">
+        <p className="text-zinc-400 text-base sm:text-lg lg:text-xl leading-7 sm:leading-8 lg:leading-9 max-w-3xl mt-6 sm:mt-8">
           {project.overview}
         </p>
 
       </div>
 
-      <div className="flex flex-wrap gap-3 mt-12">
+      <div className="flex flex-wrap gap-2 sm:gap-3 mt-8 sm:mt-12">
 
         {project.technologies.map((tech) => (
 
@@ -42,9 +42,9 @@ function ProjectHero({ project }) {
 
       </div>
 
-      <div className="grid md:grid-cols-3 gap-6 mt-16">
+      <div className="grid md:grid-cols-3 gap-4 sm:gap-6 mt-12 sm:mt-16">
 
-        <div className="rounded-2xl border border-white/10 bg-zinc-900 p-6">
+        <div className="rounded-2xl border border-white/10 bg-zinc-900 p-5 sm:p-6">
 
           <p className="text-violet-400 uppercase text-sm tracking-wider">
             Role
@@ -56,7 +56,7 @@ function ProjectHero({ project }) {
 
         </div>
 
-        <div className="rounded-2xl border border-white/10 bg-zinc-900 p-6">
+        <div className="rounded-2xl border border-white/10 bg-zinc-900 p-5 sm:p-6">
 
           <p className="text-violet-400 uppercase text-sm tracking-wider">
             Team
@@ -68,10 +68,10 @@ function ProjectHero({ project }) {
 
         </div>
 
-        <div className="rounded-2xl border border-white/10 bg-zinc-900 p-6">
+        <div className="rounded-2xl border border-white/10 bg-zinc-900 p-5 sm:p-6">
 
           <p className="text-violet-400 uppercase text-sm tracking-wider">
-            Repository
+            Status
           </p>
 
           <h3 className="mt-3 text-xl font-semibold">

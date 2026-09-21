@@ -17,31 +17,31 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="max-w-5xl mx-auto px-6 py-32"
+      className="max-w-5xl mx-auto px-4 sm:px-6 py-20 sm:py-28 lg:py-32"
     >
       <motion.div
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: .6 }}
-        className="rounded-3xl border border-white/10 bg-zinc-900/70 p-14 text-center"
+        className="rounded-3xl border border-white/10 bg-zinc-900/70 p-6 sm:p-10 lg:p-14 text-center"
       >
         <p className="uppercase tracking-[6px] text-violet-400 text-sm">
           Contact
         </p>
 
-        <h2 className="text-5xl font-bold mt-6">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mt-6">
           Let's Work Together
         </h2>
 
-        <p className="text-zinc-400 mt-8 leading-8 max-w-2xl mx-auto">
+        <p className="text-zinc-400 mt-6 sm:mt-8 leading-7 sm:leading-8 max-w-2xl mx-auto">
           I'm always open to internships, collaborations and
           opportunities to learn and build meaningful software.
         </p>
 
         <div className="mt-12">
 
-          <p className="text-xl font-medium">
+          <p className="text-base sm:text-xl font-medium break-all">
             jadegiulia3817@gmail.com
           </p>
 

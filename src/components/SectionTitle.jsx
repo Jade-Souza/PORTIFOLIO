@@ -5,7 +5,7 @@ function SectionTitle({ title, subtitle }) {
         {subtitle}
       </p>
 
-      <h2 className="text-5xl font-bold mt-3">
+      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mt-3">
         {title}
       </h2>
     </div>

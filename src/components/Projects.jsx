@@ -8,14 +8,14 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="max-w-7xl mx-auto px-6 py-32"
+      className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28 lg:py-32"
     >
       <SectionTitle
         subtitle="Portfolio"
         title="Featured Projects"
       />
 
-      <div className="grid md:grid-cols-2 gap-8">
+      <div className="grid md:grid-cols-2 gap-5 sm:gap-8">
 
         {projects.map((project) => (
 
@@ -23,12 +23,12 @@ function Projects() {
             key={project.title}
             whileHover={{ y: -8 }}
             transition={{ duration: .25 }}
-            className="rounded-3xl border border-white/10 bg-zinc-900/70 backdrop-blur-lg p-8"
+            className="rounded-3xl border border-white/10 bg-zinc-900/70 backdrop-blur-lg p-5 sm:p-8"
           >
 
             <div className="flex items-center justify-between">
 
-              <h3 className="text-2xl font-bold">
+              <h3 className="text-xl sm:text-2xl font-bold break-words">
                 {project.title}
               </h3>
 
@@ -40,7 +40,7 @@ function Projects() {
 
             </div>
 
-            <p className="text-zinc-400 mt-6 leading-7">
+            <p className="text-zinc-400 mt-5 sm:mt-6 leading-7">
               {project.description}
             </p>
 
@@ -50,7 +50,7 @@ function Projects() {
 
                 <span
                   key={tech}
-                  className="px-3 py-1 rounded-full bg-violet-500/10 border border-violet-500/30 text-violet-300 text-sm"
+                  className="px-3 py-1 rounded-full bg-violet-500/10 border border-violet-500/30 text-violet-300 text-xs sm:text-sm"
                 >
                   {tech}
                 </span>

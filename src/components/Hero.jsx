@@ -5,11 +5,11 @@ function Hero() {
   return (
     <section
       id="hero"
-      className="min-h-screen flex items-center bg-[#09090B] px-8"
+      className="min-h-screen flex items-center bg-[#09090B] px-4 sm:px-6 lg:px-8 pt-24 pb-16 sm:pb-20"
     >
       <div className="max-w-7xl mx-auto w-full">
 
-        <div className="grid lg:grid-cols-[420px_1fr] gap-12 items-center">
+        <div className="grid lg:grid-cols-[360px_1fr] xl:grid-cols-[420px_1fr] gap-10 lg:gap-12 items-center">
 
           {/* Lado Esquerdo */}
 
@@ -27,12 +27,12 @@ function Hero() {
               <img
                 src={avatar}
                 alt="Avatar"
-                className="relative w-80 rounded-full border-4 border-violet-500"
+                className="relative w-52 sm:w-64 lg:w-72 xl:w-80 rounded-full border-4 border-violet-500"
               />
 
             </div>
 
-            <h1 className="text-5xl lg:text-6xl font-extrabold mt-10 leading-none">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mt-7 sm:mt-10 leading-none text-center lg:text-left">
               <span className="text-white">Jade</span>{" "}
               <span className="text-violet-400">Souza</span>
             </h1>
@@ -51,7 +51,7 @@ function Hero() {
               Hello, I'm
             </p>
 
-            <h2 className="text-6xl font-bold leading-tight">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
 
               Computer
               <br />
@@ -61,7 +61,7 @@ function Hero() {
 
             </h2>
 
-            <p className="text-zinc-400 text-xl leading-9 mt-8 max-w-xl">
+            <p className="text-zinc-400 text-base sm:text-lg lg:text-xl leading-7 sm:leading-8 lg:leading-9 mt-6 sm:mt-8 max-w-xl">
 
               Passionate about software engineering,
               backend development and continuously improving my
@@ -69,11 +69,11 @@ function Hero() {
 
             </p>
 
-            <div className="flex gap-5 mt-12 flex-wrap">
+            <div className="flex gap-3 sm:gap-5 mt-8 sm:mt-12 flex-wrap">
 
               <a
                 href="#contact"
-                className="px-8 py-4 rounded-xl bg-violet-600 hover:bg-violet-500 transition"
+                className="px-6 sm:px-8 py-3 sm:py-4 rounded-xl bg-violet-600 hover:bg-violet-500 transition"
               >
                 Contact Me
               </a>
@@ -82,7 +82,7 @@ function Hero() {
                 href="https://github.com/Jade-Souza"
                 target="_blank"
                 rel="noreferrer"
-                className="px-8 py-4 rounded-xl border border-violet-500 hover:bg-violet-500/10 transition"
+                className="px-6 sm:px-8 py-3 sm:py-4 rounded-xl border border-violet-500 hover:bg-violet-500/10 transition"
               >
                 GitHub
               </a>
